@@ -1,81 +1,63 @@
+
+
 let options = {
-  series: [{
-    name: "Session Duration",
-    data: [45, 52, 38, 24, 33, 26, 21, 20, 6, 8, 15, 10]
-  },
-  {
-    name: "Page Views",
-    data: [35, 41, 62, 42, 13, 18, 29, 37, 36, 51, 32, 35]
-  },
-  {
-    name: 'Total Visits',
-    data: [87, 57, 74, 99, 75, 38, 62, 47, 82, 56, 45, 47]
-  }
-],
+  series: [3, 12, 16, 90],
   chart: {
-  height: 350,
-  type: 'line',
-  zoom: {
-    enabled: false
+  height: 390,
+  type: 'radialBar',
   },
-},
-dataLabels: {
-  enabled: false
-},
-stroke: {
-  width: [5, 7, 5],
-  curve: 'straight',
-  dashArray: [0, 8, 5]
-},
-title: {
-  text: 'Page Statistics',
-  align: 'left'
-},
-legend: {
-  tooltipHoverFormatter: function(val, opts) {
-    return val + ' - ' + opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex] + ''
-  }
-},
-markers: {
-  size: 0,
-  hover: {
-    sizeOffset: 6
-  }
-},
-xaxis: {
-  categories: ['01 Jan', '02 Jan', '03 Jan', '04 Jan', '05 Jan', '06 Jan', '07 Jan', '08 Jan', '09 Jan',
-    '10 Jan', '11 Jan', '12 Jan'
-  ],
-},
-tooltip: {
-  y: [
-    {
-      title: {
-        formatter: function (val) {
-          return val + " (mins)"
-        }
-      }
-    },
-    {
-      title: {
-        formatter: function (val) {
-          return val + " per session"
-        }
-      }
-    },
-    {
-      title: {
-        formatter: function (val) {
-          return val;
+  plotOptions: {
+    radialBar: {
+      offsetY: 0,
+      startAngle: 0,
+      endAngle: 270,
+      hollow: {
+        margin: 5,
+        size: '30%',
+        background: 'transparent',
+        image: undefined,
+      },
+      dataLabels: {
+        name: {
+          show: false,
+        },
+        value: {
+          show: false,
         }
       }
     }
-  ]
-},
-grid: {
-  borderColor: '#f1f1f1',
-}
+  },
+  colors: ['#1ab7ea', '#0084ff', '#39539E', '#0077B5'],
+  labels: ['Employer', 'Tâches', 'Localitées', 'Bilan'],
+  legend: {
+    show: true,
+    floating: true,
+    fontSize: '16px',
+    position: 'left',
+    offsetX: 160,
+    offsetY: 15,
+    labels: {
+      useSeriesColors: true,
+    },
+    markers: {
+      size: 0
+    },
+    formatter: function(seriesName, opts) {
+      return seriesName + ":  " + opts.w.globals.series[opts.seriesIndex]
+    },
+    itemMargin: {
+      vertical: 3
+    }
+  },
+  responsive: [{
+    breakpoint: 480,
+    options: {
+      legend: {
+          show: false
+      }
+    }
+  }]
 };
 
-let chart = new ApexCharts(document.querySelector("#cat"), options);
+let chart = new ApexCharts(document.querySelector("#stat"), options);
 chart.render();

@@ -61,7 +61,7 @@
 {
     position: relative;
     left: 80%;
-    width: 20%;
+    width: 09%;
     color: #64B83F;
 }
 
@@ -71,6 +71,7 @@
     width: 20%;
     position: relative;
     left: 80%;
+    
 }
 
 
@@ -194,4 +195,14 @@ ul li:hover
    width: 150%;
 }
 
+/********* STATIQUE *******/
+
+#stat
+{
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    top: 200%;
+    right: 50%;
+}
 
