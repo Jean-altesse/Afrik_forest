@@ -36,15 +36,41 @@
 .nav-bar1 
 {
       width: 102.5%;
-      height: 5vh;
-      background-color: blanchedalmond;
+      height: 4vh;
+      background-color: rgba(0, 0, 0, 0.24);
+      padding: 0.5%;
 }
 
 .nav-bar2 
 {
       width: 102.5%;
       height: 7vh;
-      background-color: rgb(73, 46, 5);
+      background-color: white;
+      box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.216);
+      display: flex;
+      padding: 1.5%;
+}
+
+.nav-bar2-A 
+{
+    font-size: 1.5em;
+    
+}
+
+.nav-bar2-B 
+{
+    position: relative;
+    left: 80%;
+    width: 20%;
+    color: #64B83F;
+}
+
+.user 
+{
+    color: white;
+    width: 20%;
+    position: relative;
+    left: 80%;
 }
 
 
@@ -58,6 +84,7 @@
     position: absolute;
     top: 20%;
     left: 25%;
+    display: flex;
 }
 
 .test1
@@ -69,6 +96,7 @@
     position: absolute;
     top: 20%;
     left: 50%;
+    display: flex;
 }
 
 .test2
@@ -80,6 +108,7 @@
     position: absolute;
     top: 20%;
     left: 75%;
+    display: flex;
 }
 
 .test3
@@ -91,6 +120,7 @@
     position: absolute;
     top: 40%;
     left: 25%;
+    display: flex;
 }
 
 .test4
@@ -102,6 +132,7 @@
     position: absolute;
     top: 40%;
     left: 62.5%;
+    display: flex;
 }
 
 .t 
@@ -122,6 +153,7 @@ ul li:hover
     background-color: white;
     color: #54D704;
     cursor: pointer;
+    border-radius: 35px 0 0 35px;
 
 }
 
@@ -130,7 +162,7 @@ ul li:hover
     width: 25%;
     height: 100%;
     border-radius: 09px 0px 0px 09px;
-    background-color: #54D704;
+    background-color: #2FA84A;
     border: none;
 }
 
@@ -141,3 +173,25 @@ ul li:hover
     border-radius: 09px 0px 0px 09px;
     background-color: #54D704;
 }
+
+.icont 
+{
+    display: block;
+}
+
+.icont p
+{
+   padding: 12%;
+   font-size: 25px;
+   color: #64B83F;
+}
+
+.icont2 p
+{
+   padding: 8%;
+   font-size: 25px;
+   color: #64B83F;
+   width: 150%;
+}
+
+
