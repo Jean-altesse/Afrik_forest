@@ -73,6 +73,21 @@
     left: 80%;
     
 }
+/********* MENU ***********/
+
+ul li
+{
+    list-style: none;
+}
+
+ul li:hover 
+{
+    background-color: white;
+    color: #54D704;
+    cursor: pointer;
+    border-radius: 35px 0 0 35px;
+
+}
 
 
 /********* TACHES ***********/
@@ -141,20 +156,6 @@
     color: white;
     margin-left: 7%;
     padding: 6%;
-
-}
-
-ul li
-{
-    list-style: none;
-}
-
-ul li:hover 
-{
-    background-color: white;
-    color: #54D704;
-    cursor: pointer;
-    border-radius: 35px 0 0 35px;
 
 }
 
