@@ -83,14 +83,36 @@ ul li
 ul li:hover 
 {
     background-color: white;
-    color: #54D704;
+    color: #64B83F;
     cursor: pointer;
     border-radius: 35px 0 0 35px;
+    border-right: 7px solid #64B83F;
 
 }
 
 
 /********* TACHES ***********/
+
+.icon i
+{
+    font-size: 2.2em;
+    color: white;
+    position: absolute;
+    left: 08%;
+    top: 25%;
+
+}
+
+.iconb i
+{
+    font-size: 2.2em;
+    color: white;
+    position: absolute;
+    left: 04%;
+    top: 25%;
+
+}
+
 .test
 {
     width: 20%;
@@ -173,7 +195,7 @@ ul li:hover
     width: 15.5%;
     height: 100%;
     border-radius: 09px 0px 0px 09px;
-    background-color: #54D704;
+    background-color: #64B83F;
 }
 
 .icont 
@@ -205,5 +227,14 @@ ul li:hover
     position: absolute;
     top: 200%;
     right: 50%;
+}
+
+#stat1
+{
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    top: 200%;
+    left: 50%;
 }
 

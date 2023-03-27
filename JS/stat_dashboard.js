@@ -1,7 +1,7 @@
 
 
 let options = {
-  series: [3, 12, 16, 90],
+  series: [3, 12, 16],
   chart: {
   height: 390,
   type: 'radialBar',
@@ -27,8 +27,8 @@ let options = {
       }
     }
   },
-  colors: ['#1ab7ea', '#0084ff', '#39539E', '#0077B5'],
-  labels: ['Employer', 'Tâches', 'Localitées', 'Bilan'],
+  colors: ['#64B83F', '#2C9ECF', '#54D704'],
+  labels: ['Employer', 'Tâches', 'Localitées'],
   legend: {
     show: true,
     floating: true,
