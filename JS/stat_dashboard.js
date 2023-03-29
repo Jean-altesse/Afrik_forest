@@ -1,4 +1,9 @@
+var dropdown = document.querySelector('.dropdown');
+var icon = dropdown.querySelector('i');
 
+icon.addEventListener('click', function() {
+  dropdown.classList.toggle('open');
+});
 
 let options = {
   series: [3, 12, 16],

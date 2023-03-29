@@ -1,21 +1,41 @@
+function setSuperUser(item){
+    return localStorage.setItem('superUser',JSON.stringify(item))
+}
+
+function getSuperUser(){
+    return JSON.parse(localStorage.getItem('superUser'))
+}
+
 let btn = document.querySelector('#btn') ;
+
+let superUser = {
+    email: "JeanaltseCgosse@gmail.com",
+    mot_pass: "moko"
+}
+
+
+
+setSuperUser(superUser)
 
 const form = document.querySelector('form')
 form.addEventListener('submit', function(alt) {
     alt.preventDefault()
 
-    US = JSON.parse(localStorage.getItem('utilisateur'))
-    US.forEach(element => {
-        if( 
-            ((document.querySelector('#pass').value === element.email) && (document.querySelector('#cpass').value === element.motdepass)) 
-            || 
-            ((document.querySelector('#pass').value === element.email) && (document.querySelector('#cpass').value === element.motdepass))
-        ){
-            window.location.href = ""
-        } else {
-            window.location.href = ""
-        }
-    });
+    emailEnter = document.querySelector('#email').value
+    pwdEnter = document.querySelector('#pwd').value
+
+    console.log(emailEnter)
+    console.log(pwdEnter)
+    US = getSuperUser()
+    console.log(US)
+    if( 
+        (( emailEnter === US.email) && ( pwdEnter === US.mot_pass)) 
+    ){
+        console.log("blblblblbbb")
+        window.location.href = "dashboard.html"
+    } else{
+        alert("pas corret")
+    }
 })
 
 btn.addEventListener('submit',function (alt){

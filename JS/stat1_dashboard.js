@@ -1,3 +1,10 @@
+var dropdown = document.querySelector('.dropdown');
+var icon = dropdown.querySelector('i');
+
+icon.addEventListener('click', function() {
+  dropdown.classList.toggle('open');
+});
+
 var options = {
     series: [{
       name: "Session Duration",
