@@ -9,8 +9,8 @@ function getSuperUser(){
 let btn = document.querySelector('#btn') ;
 
 let superUser = {
-    email: "JeanaltseCgosse@gmail.com",
-    mot_pass: "moko"
+    email: "Jeanaltesseg@gmail.com",
+    mot_pass: "jalt"
 }
 
 
