@@ -10,4 +10,4 @@ function slide() {
 }
 
 slides[current].classList.add("active");
-setInterval(slide, 1000);
+setInterval(slide, 2000);

@@ -94,6 +94,8 @@
   }
   
   .dropdown-content {
+    width: 200px;
+    height: 17vh;
     position: absolute;
     top: 100%;
     left: 0;
@@ -105,9 +107,17 @@
   
   .dropdown-content a {
     display: block;
-    padding: 8px;
+    padding: 12px;
     text-decoration: none;
     color: #333;
+  }
+
+  .dropdown-content a:hover {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
   }
   
   .dropdown:hover .dropdown-content {
@@ -123,11 +133,17 @@ ul li
     list-style: none;
 }
 
+ul a  
+{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
 ul li:hover 
 {
     background-color: white;
     color: #54D704;
-    cursor: pointer;
     border-radius: 35px 0 0 35px;
 
 }
@@ -137,6 +153,7 @@ ul li:hover
     color: white;
     margin-left: 7%;                    
     padding: 6%;
+    text-decoration: none;
 
 }
 
